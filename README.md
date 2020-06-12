@@ -13,7 +13,6 @@ testTrainedVGG.py是对训练好的VGG16模型测试的文件，该文件生成�
 testBestVGG.py是对最好参数的VGG16模型测试的文件，该文件生成表示预测结果和原便签的txt文件，分别存储在yolodetection和yolotruth文件夹中，以便计算mAP和画图。<br>
 pascalvoc.py文件是计算mAP并画每类的PR曲线的。<br>
 Plot.py文件在图片中画出原始便签框和预测的框。<br>
-
 report.pdf是报告文件
 
 
@@ -62,7 +61,9 @@ python pascalvoc.py -t 0.9
 ```shell
 Plot.py
 ```
-测试最优参数YOLO-LITE模型：
+测试最优参数YOLO-LITE模型：<br>
+由于文件过大，请先下载参数，将params_best.pkl文件放置codes目录下进行测试
+https://cloud.tsinghua.edu.cn/f/db83809187064f05ae38/?dl=1
 ```shell
 python testBestYOLO.py
 python pascalvoc.py
@@ -88,7 +89,9 @@ python pascalvoc.py -t 0.9
 ```shell
 Plot.py
 ```
-测试最优参数VGG16模型：
+测试最优参数VGG16模型：<br>
+由于文件过大，请先下载参数，将VGG_best.pkl文件放置codes目录下进行测试
+https://cloud.tsinghua.edu.cn/f/b9390c2a676f4961a4fe/?dl=1
 ```shell
 python testBestVGG.py
 python pascalvoc.py
